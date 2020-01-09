@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
+title: 陈浩的个人博客
+subtitle: chingle_cn@icloud.com
+description: 博客主要关于数学、python、机器学习等内容，应用上主要是自然语言处理与计算机视觉。
+keywords: python，machine learning
+author: 陈浩
+language: zh-CN
 timezone: ''
 
 # URL
@@ -93,7 +93,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next 
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
