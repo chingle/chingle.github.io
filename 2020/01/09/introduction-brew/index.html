@@ -54,7 +54,7 @@
 <meta property="og:description" content="软件开发总会碰到需要使用的软件包依赖于各种各样的其它软件包，而如果需要人们手动去查询这些依赖包难免会效率低下，因此大多数主流操作系统都有提供相应的软件包管理器，如Ubuntu的apt-get，Mac OS的Homebrew， Red hat的yum等。 Homebrew是Mac OS上强大的软件包管理器，为其提供了非常方便的安装方式，简单的一条指令，就可以实现包管理，你不用再关心各种依赖和文件路径">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-01-08T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-01-09T12:38:40.747Z">
+<meta property="article:modified_time" content="2020-01-09T12:39:41.791Z">
 <meta property="article:author" content="陈浩">
 <meta property="article:tag" content="python，machine learning">
 <meta name="twitter:card" content="summary">
@@ -231,7 +231,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-01-09 00:00:00 / 修改时间：20:38:40" itemprop="dateCreated datePublished" datetime="2020-01-09T00:00:00+08:00">2020-01-09</time>
+              <time title="创建时间：2020-01-09 00:00:00 / 修改时间：20:39:41" itemprop="dateCreated datePublished" datetime="2020-01-09T00:00:00+08:00">2020-01-09</time>
             </span>
 
           
@@ -253,8 +253,11 @@ Homebrew的官网为<a href="https://brew.sh" target="_blank" rel="noopener">htt
 </ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;usr&#x2F;bin&#x2F;ruby -e &quot;$(curl -fsSL https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;Homebrew&#x2F;install&#x2F;master&#x2F;install)&quot;</span><br></pre></td></tr></table></figure>
 <ol start="2">
-<li><strong>检查 Homebrew 自身的状态</strong><br />
-<code>brew doctor</code></li>
+<li><strong>检查 Homebrew 自身的状态</strong></li>
+</ol>
+<pre class="highlight"><code class="">brew doctor
+</code></pre>
+<ol start="3">
 <li><strong>查询软件包</strong><br />
 <code>brew search &lt;packagename&gt;</code><br />
 比如想要安装python：<br />

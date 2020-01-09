@@ -11,8 +11,11 @@ Homebrew的官网为<a href="https://brew.sh" target="_blank" rel="noopener">htt
 </ol>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;usr&#x2F;bin&#x2F;ruby -e &quot;$(curl -fsSL https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;Homebrew&#x2F;install&#x2F;master&#x2F;install)&quot;</span><br></pre></td></tr></table></figure>
 <ol start="2">
-<li><strong>检查 Homebrew 自身的状态</strong><br />
-<code>brew doctor</code></li>
+<li><strong>检查 Homebrew 自身的状态</strong></li>
+</ol>
+<pre class="highlight"><code class="">brew doctor
+</code></pre>
+<ol start="3">
 <li><strong>查询软件包</strong><br />
 <code>brew search &lt;packagename&gt;</code><br />
 比如想要安装python：<br />
