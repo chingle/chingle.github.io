@@ -5,30 +5,18 @@
     <url>/2020/01/09/introduction-brew/</url>
     <content><![CDATA[<p>软件开发总会碰到需要使用的软件包依赖于各种各样的其它软件包，而如果需要人们手动去查询这些依赖包难免会效率低下，因此大多数主流操作系统都有提供相应的软件包管理器，如Ubuntu的apt-get，Mac OS的Homebrew， Red hat的yum等。<br>Homebrew是Mac OS上强大的软件包管理器，为其提供了非常方便的安装方式，简单的一条指令，就可以实现包管理，你不用再关心各种依赖和文件路径的情况，使用起来十分方便快捷。<br>Homebrew的官网为<a href="https://brew.sh" target="_blank" rel="noopener">https://brew.sh</a>，想详细了解brew相关操作的人可以在官网上查看。下面列出brew常用的操作：  </p>
 <ol>
-<li><p><strong>Homebrew 的安装</strong><br><code>/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</code></p>
-</li>
-<li><p><strong>检查 Homebrew 自身的状态</strong><br><code>brew doctor</code>  </p>
-</li>
-<li><p><strong>查询软件包</strong><br><code>brew search &lt;packagename&gt;</code><br>比如想要安装python：<br><code>brew search python</code><br>查询结果中有，那么你就可以用下面的命令进行安装。  </p>
-</li>
-<li><p><strong>安装软件包</strong><br><code>brew install &lt;packagename&gt;</code></p>
-</li>
-<li><p><strong>卸载软件包</strong><br><code>brew uninstall &lt;packagename&gt;</code> </p>
-</li>
-<li><p><strong>列出通过brew安装的软件包列表</strong><br><code>brew list</code>  </p>
-</li>
-<li><p><strong>升级所有可升级的软件包</strong><br><code>brew upgrade</code><br>也可以使用如下命令升级特定的软件包：<br><code>brew upgrade &lt;packagename&gt;</code>  </p>
-</li>
-<li><p><strong>查看软件包的信息</strong>(依赖包，版本等)<br><code>brew info &lt;packagename&gt;</code>  </p>
-</li>
-<li><p><strong>清理不需要的软件包</strong>(已更新的旧版本，更新残留等)<br><code>brew cleanup</code>  </p>
-</li>
-<li><p><strong>更新 Homebrew 自身</strong><br><code>brew update</code><br>此命令意义不大，因为在每次更新软件包之前，Homebrew 都会先检查一下自身是否有更新  </p>
-</li>
-<li><p>将其它形式安装的库链接到brew， 让brew进行管理：<br><code>brew link</code>  </p>
-</li>
-<li><p>将软件包移出brew管理的权限<br><code>brew unlink</code></p>
-</li>
+<li><strong>Homebrew 的安装</strong><br><code>/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</code></li>
+<li><strong>检查 Homebrew 自身的状态</strong><br><code>brew doctor</code>  </li>
+<li><strong>查询软件包</strong><br><code>brew search &lt;packagename&gt;</code><br>比如想要安装python：<br><code>brew search python</code><br>查询结果中有，那么你就可以用下面的命令进行安装。  </li>
+<li><strong>安装软件包</strong><br><code>brew install &lt;packagename&gt;</code></li>
+<li><strong>卸载软件包</strong><br><code>brew uninstall &lt;packagename&gt;</code> </li>
+<li><strong>列出通过brew安装的软件包列表</strong><br><code>brew list</code>  </li>
+<li><strong>升级所有可升级的软件包</strong><br><code>brew upgrade</code><br>也可以使用如下命令升级特定的软件包：<br><code>brew upgrade &lt;packagename&gt;</code>  </li>
+<li><strong>查看软件包的信息</strong>(依赖包，版本等)<br><code>brew info &lt;packagename&gt;</code>  </li>
+<li><strong>清理不需要的软件包</strong>(已更新的旧版本，更新残留等)<br><code>brew cleanup</code>  </li>
+<li><strong>更新 Homebrew 自身</strong><br><code>brew update</code><br>此命令意义不大，因为在每次更新软件包之前，Homebrew 都会先检查一下自身是否有更新  </li>
+<li>将其它形式安装的库链接到brew， 让brew进行管理：<br><code>brew link</code>  </li>
+<li>将软件包移出brew管理的权限<br><code>brew unlink</code></li>
 </ol>
 ]]></content>
   </entry>
