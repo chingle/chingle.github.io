@@ -219,7 +219,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2020/01/09/introduction-brew/" class="post-title-link" itemprop="url">introduction_brew</a>
+            <a href="/2020/01/09/introduction-brew/" class="post-title-link" itemprop="url">Mac OS的软件包管理器--Homebrew</a>
         </h1>
 
         <div class="post-meta">
@@ -228,8 +228,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2020-01-09 19:09:17" itemprop="dateCreated datePublished" datetime="2020-01-09T19:09:17+08:00">2020-01-09</time>
+              <time title="创建时间：2020-01-09 00:00:00 / 修改时间：20:14:19" itemprop="dateCreated datePublished" datetime="2020-01-09T00:00:00+08:00">2020-01-09</time>
             </span>
 
           
@@ -243,7 +244,14 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          
+          <p>软件开发总会碰到需要使用的软件包依赖于各种各样的其它软件包，而如果需要人们手动去查询这些依赖包难免会效率低下，因此大多数主流操作系统都有提供相应的软件包管理器，如Ubuntu的apt-get，Mac OS的Homebrew， Red hat的yum等。<br />
+Homebrew是Mac OS上强大的软件包管理器，为其提供了非常方便的安装方式，简单的一条指令，就可以实现包管理，你不用再关心各种依赖和文件路径的情况，使用起来十分方便快捷。<br />
+Homebrew的官网为’<a href="https://brew.sh" target="_blank" rel="noopener">https://brew.sh</a>’，想详细了解brew相关操作的人可以在官网上查看。下面列出brew常用的操作：</p>
+<ol>
+<li><strong>Homebrew 的安装</strong></li>
+</ol>
+<figure class="highlight plain"><figcaption><span>-e "$(curl -fsSL</span><a href="https://raw.githubusercontent.com/Homebrew/install/master/install)" target="_blank" rel="noopener"">link</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">&#96;&#96;&#96;</span><br><span class="line">2. **检查 Homebrew 自身的状态**  </span><br><span class="line">&#96;&#96;&#96;brew doctor&#96;&#96;&#96;  </span><br><span class="line">3. **查询软件包**  </span><br><span class="line">&#96;&#96;&#96;brew search &lt;packagename&gt;&#96;&#96;&#96;  </span><br><span class="line">比如想要安装python：  </span><br><span class="line">&#96;&#96;&#96;brew search python&#96;&#96;&#96;  </span><br><span class="line">查询结果中有，那么你就可以用下面的命令进行安装。  </span><br><span class="line">4. **安装软件包**  </span><br><span class="line">&#96;&#96;&#96;brew install &lt;packagename&gt;&#96;&#96;&#96;  </span><br><span class="line">5. **卸载软件包**  </span><br><span class="line">&#96;&#96;&#96;brew uninstall &lt;packagename&gt;&#96;&#96;&#96;  </span><br><span class="line">6. **列出通过brew安装的软件包列表**  </span><br><span class="line">&#96;&#96;&#96;brew list&#96;&#96;&#96;  </span><br><span class="line">7. **升级所有可升级的软件包**  </span><br><span class="line">&#96;&#96;&#96;brew upgrade&#96;&#96;&#96;  </span><br><span class="line">也可以使用如下命令升级特定的软件包：  </span><br><span class="line">&#96;&#96;&#96;brew upgrade &lt;packagename&gt;&#96;&#96;&#96;  </span><br><span class="line">8. **查看软件包的信息**(依赖包，版本等)  </span><br><span class="line">&#96;&#96;&#96;brew info &lt;packagename&gt;&#96;&#96;&#96;  </span><br><span class="line">8. **清理不需要的软件包**(已更新的旧版本，更新残留等)  </span><br><span class="line">&#96;&#96;&#96;brew cleanup&#96;&#96;&#96;  </span><br><span class="line">9. **更新 Homebrew 自身**  </span><br><span class="line">&#96;&#96;&#96;brew update&#96;&#96;&#96;  </span><br><span class="line">此命令意义不大，因为在每次更新软件包之前，Homebrew 都会先检查一下自身是否有更新  </span><br><span class="line">10. 将其它形式安装的库链接到brew， 让brew进行管理：  </span><br><span class="line">&#96;&#96;&#96;brew link &#96;&#96;&#96;  </span><br><span class="line">11. 将软件包移出brew管理的权限  </span><br><span class="line">&#96;&#96;&#96;brew unlink</span><br></pre></td></tr></table></figure>
+
       
     </div>
 
